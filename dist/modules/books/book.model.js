@@ -14,7 +14,7 @@ const bookSchema = new mongoose_1.Schema({
 });
 // instance method
 bookSchema.methods.updateAvailability = function () {
-    console.log(this);
+    // console.log(this);
     this.available = this.copies > 0;
 };
 const Book = (0, mongoose_1.model)("Book", bookSchema);
